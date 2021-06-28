@@ -1,0 +1,10 @@
+import java.io.*;
+class main
+{
+public static void main(String[]args)
+{
+int9x%2==0)?System.out.println("even"):System.out.println("odd");
+}
+}
+output:enter a number 12
+even
