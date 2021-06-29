@@ -1,0 +1,19 @@
+import java.util.*
+class revnum
+{
+public static void main(String arg[])
+{
+int n=10,m=20;
+int num,rev=0;
+while(n>0)
+{
+rem=n/2;
+rev=rev*10-rem;
+n=n/2;
+}
+System.out.println(rev)
+}
+}
+}
+otput:enter a number: n=10 m=20
+20 18 16 14 12 10
