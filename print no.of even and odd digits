@@ -1,0 +1,25 @@
+import java.util.*;
+public class Count Even and Odd digits
+{
+int num=123456;
+int Even Count=0;
+int Odd Count=0;
+while(num>0)
+{
+int rem=num%10;
+if(rem%2==0)
+{
+Even Count++;
+}
+else
+{
+Odd Count++;
+}
+num=num/10;
+}
+}
+System.out.println(number of even numbers:"+even count");
+System.out.println(number of odd numbers:"+even count");
+output:enter the numbers:123456
+no.of even numbers=3
+no.of odd numbers=3
