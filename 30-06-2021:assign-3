@@ -1,0 +1,19 @@
+class Solution {
+public:
+    int subtractProductAndSum(int n) {
+        int product=1;
+        while(n>0){
+            sum+=n%10;
+            product*=n%10;
+            n/=10;
+        }
+        return proguct-sum;
+    }
+};
+------------------
+otput:enter a number:
+n%10:4
+local variables
+n:234
+sum:4
+product:1
