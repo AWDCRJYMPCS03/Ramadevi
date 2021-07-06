@@ -1,0 +1,30 @@
+public class Main 
+{
+	 public static void moveZero(int[] arr)
+	 {  
+		 int n=arr.length;  
+	     int k=0;  
+	     for (int i=0; i<n; i++)
+	     {  
+	    	 if (arr[i]!= 0)
+	    	 {  
+	             arr[k++] = arr[i];  
+	         }  
+	     }  
+	     while (k< n)  
+	     arr[k++] = 0;  
+	 }  
+	 public static void main(String args[]) 
+	 {  
+	     int[] arr = {5, 1, 6, 0, 0, 3, 9, 0, 6, 7, 8, 12, 10, 0, 2};  
+	     moveZero(arr);   
+	     System.out.print("Array after moving zeros to end : ");  
+	  
+	     for (int i=0, n=arr.length; i<n; i++)  
+	     System.out.print(arr[i] + " ");  
+	 }  
+}
+-----------------
+output:
+enter numbers:
+Array after moving zeros to end : 5 1 6 3 9 6 7 8 12 10 2 0 0 0 0 
