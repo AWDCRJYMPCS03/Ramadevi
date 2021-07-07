@@ -1,0 +1,36 @@
+import java.util.*;
+public class Main 
+{ 
+  public static int find(int[] arr)
+  {
+    int l=0;
+    int r=arr.length-1;
+    int lsum=arr[l], rsum=arr[r];
+    while(l<r) 
+    {
+      if(lsum==rsum && l+2==r)
+        return l+1;
+      if(lsum<rsum)
+        lsum+=arr[++l];
+      else
+        rsum+=arr[--r];
+    }
+    return -1;  
+  }
+  public static void main(String args[]) 
+  { 
+    int arr[] = {3,10,10,3,4,5,4,10}; 
+    int size = arr.length;
+    System.out.println(find(arr)); 
+  } 
+} 
+------------------
+left=2,right=4
+a={3,10,10,3,4,5,4,10}
+output:
+3
+
+
+
+
+
