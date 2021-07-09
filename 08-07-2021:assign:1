@@ -1,0 +1,50 @@
+import java.util.*;
+public class Main
+{
+        Scanner	sc= new Scanner(System.in);
+	public static void main(String[] args)
+	{
+		int i,j,r,c,sum=0;
+		System.out.println("\n Enter Matrix Rows and Columns :");
+		Scanner sc=new Scanner (System.in);
+		r=sc.nextInt();
+		c=sc.nextInt();
+		int arr[][] = new int[r][c];
+		System.out.println("\n  Enter the Matrix numbers :");
+		for(i=0;i<r;i++) 
+		{
+			for(j=0;j<c;j++)
+			{
+				arr[i][j] = sc.nextInt();
+			}		
+		}	
+		for(i=0;i<arr.length;i++)
+		{
+			 sum=0;
+			for(j=0;j<arr[0].length;j++)
+			{
+			sum=sum+arr[j][i];
+			}
+			System.out.println("\nThe Sum of Matrix numbers ");
+			System.out.println( "in Column "+i+"="+sum);
+		}
+	}
+}
+------------------
+output:
+Enter Matrix Rows and Columns :  
+3 3
+
+  Enter the Matrix numbers :  
+2 3 5
+2 5 8
+8 4 2
+
+The Sum of Matrix numbers 
+in Column 0=12
+
+The Sum of Matrix numbers 
+in Column 1=12
+
+The Sum of Matrix numbers 
+in Column 2=15
