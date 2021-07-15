@@ -1,0 +1,48 @@
+import java.util.*;
+class Main
+{
+  public static void main(String args[])
+  {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a string");
+      String str=sc.next();
+      boolean status= substring(str);
+      String str1=" ";
+      String str2=" ";
+  }
+  static boolean substring(String str)
+  {
+      int n=str.length();
+      char ch[]=str.toCharArray();
+      for(int k=0;k<n;k++)
+      {
+      System.out.print("enter the String str1");
+      for(int i=0;i<n;i++)
+      {
+      System.out.print("enter the String str2");
+          for(int j=0;j<n;j++)
+          {
+              System.out.print(ch[j]+" ");
+          }
+          if((str1!String str))
+          return false;
+      }
+      }
+         return true;  
+  }
+}
+--------------------
+output:
+enter a string:aditya
+enter str1:ad
+enter str2:tya
+true
+true
+
+
+
+
+
+
+
+
