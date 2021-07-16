@@ -1,0 +1,27 @@
+import java.util.*;
+class Main
+{
+  public static void main(String args[])
+  {
+   ArrayList<String>a1=new ArrayList<String>();
+          a1.add("Red");
+          a1.add("Blue");
+          a1.add("Green");
+          a1.add("Pink");
+          System.out.println("first array:"+a1);
+          ArrayList<String>b2=new ArrayList<String>();
+          b2.add("White");
+          b2.add("Yellow");
+          b2.add("Pink");
+          System.out.println("second array:"+b2);
+        ArrayList<String>c=new ArrayList<String>();
+        c.addAll(a1);
+        c.addAll(b2);
+        System.out.println("New array:"+c);
+     }
+}
+--------------------
+output:
+first array:[Red, Blue, Green, Pink]
+second array:[White, Yellow, Pink]
+New array:[Red, Blue, Green, Pink, White, Yellow, Pink]
