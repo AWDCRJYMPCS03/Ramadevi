@@ -1,0 +1,38 @@
+import java.util.*;
+public class Solution
+{
+  public static int m=1000000;
+    public static int prime[]=new int[m];
+     public static void sieve()
+     {
+            for(int i=0;i<m;i++)
+                prime[i]=1;
+             prime[0]=0;
+             prime[1]=0;
+             for(int p=2;p*p<m;p++)
+             {
+                 if(prime[p]==1)
+                 {
+                     for(int j=p*p;j<m;j+=p)
+                     {
+                         prime[j]=0;
+                     }
+                 }
+             }
+     }
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        sieve();
+        while(t>0)
+        {
+                 int n=sc.nextInt();
+                if(prime[n]==1)
+                    System.out.println("Yes");
+                else
+                    System.out.println("No");
+               t--;
+        }  
+    }
+}
